@@ -4,6 +4,7 @@
  */
 package com.mycompany.presengo.app;
 import java.util.Scanner;
+import com.mycompany.presengo.model.Mahasiswa;
 
 /**
  *
@@ -21,6 +22,7 @@ public class MainPresensi {
 
         System.out.print("Masukkan NIM: ");
         String nim = input.nextLine();
+        Mahasiswa mahasiswa = new Mahasiswa(nama, nim);
 
         int pilihan = 0;
 
@@ -50,8 +52,7 @@ public class MainPresensi {
                     break;
 
                 case 2:
-                    System.out.println("Nama: " + nama);
-                    System.out.println("NIM: " + nim);
+                    mahasiswa.tampilkanIdentitas();
                     break;
 
                 case 3:
@@ -65,4 +66,6 @@ public class MainPresensi {
 
         input.close();
     }
+     
+     
 }

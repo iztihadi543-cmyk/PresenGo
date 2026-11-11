@@ -52,7 +52,8 @@ public class MainPresensi {
                     break;
 
                 case 2:
-                    mahasiswa.tampilkanIdentitas();
+                    System.out.println("Nama: " + mahasiswa.getNama());
+                    System.out.println("NIM: " + mahasiswa.getNim());
                     break;
 
                 case 3:
